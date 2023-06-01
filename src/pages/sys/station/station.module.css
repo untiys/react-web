@@ -1,0 +1,20 @@
+/* :global .ant-table-thead tr th {
+  background-color: #eeeef1;
+} */
+
+:global .ant-table {
+  position: relative;
+  height: 300px !important;
+  overflow: hidden !important;
+}
+:global .ant-table-tbody {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+:global .ant-table-thead {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  right: 0;
+}

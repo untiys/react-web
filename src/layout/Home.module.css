@@ -1,0 +1,90 @@
+.logo {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 5px;
+}
+.layout-header-background {
+  height: 39px;
+  background-color: #fff;
+}
+
+.tags {
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+  padding: 0px 10px;
+  background: #fff;
+  border-bottom: 1px solid #d8dce5;
+  -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%);
+}
+
+.scroll-container {
+  white-space: nowrap;
+  width: 100%;
+}
+.scrollbar__wrap {
+  /* height: 49px; */
+  overflow: scroll;
+  margin-bottom: -17px;
+}
+.tag-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #d8dce5;
+  color: #495060;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.active-tag {
+  color: #fff;
+  background-color: rgb(64, 158, 255);
+}
+.active-tag::before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.close-hover:hover {
+  color: rgba(233, 56, 20, 0.952);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(243, 238, 238, 0.3);
+}
+
+/*定义滚动条轨道*/
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*定义滑块*/
+
+.scroll-container ::-webkit-scrollbar-thumb {
+  background-color: rgb(138, 138, 181, 0);
+  border-radius: 4px;
+  opacity: 0;
+}
+.scroll-container:hover ::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 169, 188, 0.5);
+  border-radius: 4px;
+  opacity: 1;
+}

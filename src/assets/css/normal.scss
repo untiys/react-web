@@ -1,0 +1,20 @@
+.ant-table-cell::before {
+  width: 0 !important;
+}
+
+.ant-tag{
+    margin: 0 !important;
+}
+// 自定义按钮样式
+.button-success{
+    background-color: green;
+    border-color: green;
+    &:hover,&:focus{
+        background-color: rgb(64, 231, 64);
+        border-color: rgb(64, 231, 64);
+    }
+    &:active,&.active{
+        background-color: rgb(67, 172, 67);
+        border-color: rgb(67, 172, 67);
+    }
+}
